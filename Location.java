@@ -4,6 +4,7 @@ public class Location {
     /** instances needed */
 
     public boolean isStation = false;
+    public String stationName;
     private int xValue;
     private int yValue;
     private int pFlow;
@@ -18,6 +19,14 @@ public class Location {
     }
 
     /** Bunch of getters and setters */
+    public String getName() {
+        return stationName;
+    }
+
+    public void setName(String name) {
+        stationName = name;
+    }
+    
     public int getpFlow() {
         return pFlow;
     }
@@ -26,11 +35,11 @@ public class Location {
         pFlow = flow;
     }
 
-    public int getRGB() {
+    public int[] getRGB() {
         return RGB;
     }
 
-    public void setRGB(int RGB) {
+    public void setRGB(int[] RGB) {
         this.RGB = RGB;
     }
 
