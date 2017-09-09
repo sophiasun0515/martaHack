@@ -11,9 +11,10 @@ public class Location {
     private int[] RGB;
 
     /** Constructor */
-    public Location(int xValue, int yValue) {
+    public Location(int xValue, int yValue, String name) {
         this.xValue = xValue;
         this.yValue = yValue;
+        stationName = name;
         RGB = new int[3];
 
     }
